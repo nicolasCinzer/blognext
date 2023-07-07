@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { FaYoutube, FaTwitter, FaGithub, FaLaptop } from 'react-icons/fa'
 
 type Props = {}
 
@@ -14,6 +15,20 @@ export default function Navbar({}: Props) {
             Nicolas Cinzer
           </Link>
         </h1>
+        <div className='flex justify-center gap-8 sm:justify-evenly align-middle text-2xl lg:text-3xl'>
+          <Link href={'https://www.youtube.com/watch?v=843nec-IvW0&t=9811s&ab_channel=DaveGray'}>
+            <FaYoutube />
+          </Link>
+          <Link href={'https://www.youtube.com/watch?v=843nec-IvW0&t=9811s&ab_channel=DaveGray'}>
+            <FaTwitter />
+          </Link>
+          <Link href={'https://www.youtube.com/watch?v=843nec-IvW0&t=9811s&ab_channel=DaveGray'}>
+            <FaGithub />
+          </Link>
+          <Link href={'https://www.youtube.com/watch?v=843nec-IvW0&t=9811s&ab_channel=DaveGray'}>
+            <FaLaptop />
+          </Link>
+        </div>
       </div>
     </nav>
   )
